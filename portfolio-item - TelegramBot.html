@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Analyst Ricardo Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Studies</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Telegram <strong>ChatBot</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Detectar Depresion</p>
+            <img src="img/Telegram1.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <h3>Este proyecto fue creado como Proyecto Final para el Bootcamp de Data Analytics en Ironhack.</h3>
+            <h4>Ganador del <strong>Tercer Lugar</strong> en la categoría de proyectos individuales</h4>
+            
+            <img src="img/depression-1.jpg" alt="">
+
+            <p><strong>Photo by <a href="https://unsplash.com/@jonathanrados?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Rados</a> on <a href="https://unsplash.com/s/photos/depression?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</strong></a></p>
+  
+            
+            <p>Este Chatbot está creado en Telegram y Python y aplica el test de Beck para detección de Depresión.</p>
+            <p>El funcionamiento del mismo fue creado pensando en la optimización para la obtención de los datos correctos por cada usuario, por lo que las respuestas se muestran en pantalla en forma de botones, lo que impide que el usuario ingrese datos erróneos. </p>
+            <p>Los datos son almacenados en un archivo JSON, lo cual permite poder realizar el análisis posterior, manteniendo el anonimato de los usuarios.</p>
+            <p><strong>Motivo para realizar este Bot:</strong> Inicié analizando datos del INEGI, buscando la cantidad de muertes relacionadas con depresión en México, y la gran cantidad de desinformación que se cuenta respecto a este tema.</p>
+            <p>Por ello, la creación de este Bot es con la finalidad de ayudar a que la gente tenga una herramienta confiable que le pueda brindar una idea de su estado de salud mental y, en caso de ser necesario, se pueda acercar con alguien profesional de la salud que lo oriente y apoye.</p>
+
+            <p><strong>Pasos a seguir con este proyecto:</strong></p>
+            <p>Está pendiente que, con base a la ubicación del usuario, pueda arrojar recomendaciones de los psicólogos que están cerca de el, para que lo puedan orientar y apoyar correctamente. </p>
+            <p>Ya que el Bot se encuentra en un servidor de AWS, puedes acceder a el y realizar el test sin ningún problema. 
+                Te invito a buscarlo en la aplicación de Telegram como: "Depresión_IH_Bot", o con el nombre de usuario: "@Ironhack_Proyecto_Bot"</p>
+
+            <p>Puedes revisar el repositorio de este proyecto en mi <a href="https://github.com/rikrdinii1/Proyecto_Final_IH.git"><strong>GitHub</strong></A></p>
+
+
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:ricardo.fuentes.carbo@hotmail.com" class="footer__link">ricardo.fuentes.carbo@hotmail.com</a>
+
+            <!-- Editar cada uno de los Item-->
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/ricardo-fuentes-carbo">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="rikrdinii.medium.com">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/rikrdinii1">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
