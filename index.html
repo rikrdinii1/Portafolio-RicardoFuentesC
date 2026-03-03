@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | Data Analyst</title>
+<!-- BEGIN: Tailwind CSS & Configuration -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'raven-blue': '#0e1a40',
+            'raven-dark': '#0a1128',
+            'raven-bronze': '#946b2d',
+            'raven-gold': '#c5a059',
+            'raven-parchment': '#f0ead6',
+            'raven-accent': '#222f5b'
+          }
+        }
+      }
+    }
+  </script>
+<!-- END: Tailwind CSS & Configuration -->
+<!-- BEGIN: Custom Typography Styles -->
+<style data-purpose="typography">
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a1128; /* Ravenclaw Dark Blue */
+      color: #f0ead6; /* Parchment */
+    }
+
+    h1, h2, h3, .brand-font {
+      font-family: 'Cinzel', serif;
+    }
+
+    .typewriter-cursor::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+<!-- END: Custom Typography Styles -->
+<style data-purpose="layout-styles">
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px -5px rgba(148, 107, 45, 0.3);
+    }
+    .profile-glow {
+      box-shadow: 0 0 30px rgba(197, 160, 89, 0.4);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-raven-dark/90 backdrop-blur-sm border-b border-raven-bronze/30">
+<div class="max-auto px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
+<div class="brand-font text-raven-gold text-xl font-bold tracking-widest">PORTFOLIO.</div>
+<ul class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+<li><a class="hover:text-raven-gold transition" href="#inicio">Inicio</a></li>
+<li><a class="hover:text-raven-gold transition" href="#estudios">Estudios</a></li>
+<li><a class="hover:text-raven-gold transition" href="#proyectos">Proyectos</a></li>
+<li><a class="hover:text-raven-gold transition" href="#experiencia">Experiencia</a></li>
+</ul>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: HeroSection -->
+<section class="min-h-screen flex items-center pt-20 px-6" id="inicio">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Left Column: Profile Image -->
+<div class="flex justify-center order-2 lg:order-1">
+<div class="relative group">
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-raven-bronze p-2 profile-glow overflow-hidden">
+<img alt="Profile Portrait" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCezY54dl30dU6JaJ9fdpE6sFKWnsFo2jICIH18553mZJICOXBZrO4K02bkKHlwBTjM_F91PrRscX3gZKrHC7zdF2Hp4X1HRWi0U8lOaZKGgkSK7wD7HESokkWuXKC_KQw28buRrhfPpEdgh29S-D27EJhnF4G6jPIUHrH3o_QC1FpxQqMiWxpQwiRlTJpQqT8eYjhcCD082_Tk5YtKj6PwLTl00GP-iJC5f8JMcXynQ0D4OPRCfOi600lmTMdoF3gmnJ5DoqMGTxsH"/>
+</div>
+<!-- Decorative Ring -->
+<div class="absolute -inset-4 border border-raven-gold/20 rounded-full animate-pulse"></div>
+</div>
+</div>
+<!-- Right Column: Text Content -->
+<div class="order-1 lg:order-2 text-center lg:text-left">
+<h1 class="text-4xl md:text-6xl font-bold text-raven-gold mb-12 typewriter-cursor min-h-[120px]" id="typewriter">
+<!-- Dynamic Text via Script -->
+</h1>
+<div class="space-y-4">
+<p class="text-xl text-raven-parchment/80 font-medium">Analista de datos, especializado en la prevención de fraude transaccional.</p>
+<div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-6">
+<span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Python</span>
+<span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">SQL</span>
+<span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Excel</span>
+<span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Looker</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Google Sheets</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Pandas</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Numpy</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Matplotlib</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Seaborn</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Jupyter Notebook</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Statistics</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Tableau</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Negotiation</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Analytical</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Team Work</span>
+  <span class="px-4 py-1 border border-raven-bronze text-xs rounded-full bg-raven-accent/30">Efficient Communication</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: StudiesSection -->
+<section class="py-24 bg-raven-dark/50" id="estudios">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-3xl font-bold text-raven-gold mb-16 tracking-widest">Estudios</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Study Cards -->
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="EBC Logo" class="max-h-full max-w-full object-contain" src="https://images.seeklogo.com/logo-png/17/1/escuela-bancaria-y-comercial-logo-png_seeklogo-178270.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">Licenciatura en Negocios</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2015 - 2019</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Enfoque en administración financiera y estrategias de mercado global.</p></div></div>
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="HackerRank Logo" class="max-h-full max-w-full object-contain" src="https://images.seeklogo.com/logo-png/43/1/hackerrank-logo-png_seeklogo-432682.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">SQL Gold Badge</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2022</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Certificación avanzada en resolución de problemas complejos mediante consultas SQL.</p></div></div>
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="Ironhack Logo" class="max-h-full max-w-full object-contain" src="https://images.seeklogo.com/logo-png/44/1/ironhack-logo-png_seeklogo-449352.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">Data Analytics Bootcamp</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2021</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Programa intensivo enfocado en Python, limpieza de datos, EDA y Machine Learning.</p></div></div>
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="DataCamp Logo" class="max-h-full max-w-full object-contain" src="https://images.seeklogo.com/logo-png/45/1/datacamp-logo-png_seeklogo-456547.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">Data Scientist Professional</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2022</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Certificación profesional que valida habilidades en manipulación de datos y modelado estadístico.</p></div></div>
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="Coursera Logo" class="max-h-full max-w-full object-contain" src="https://images.seeklogo.com/logo-png/47/1/coursera-logo-png_seeklogo-477117.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">Google Data Analytics</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2020</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Certificación profesional sobre el proceso completo de análisis de datos y toma de decisiones.</p></div></div>
+<div class="group relative bg-raven-accent/20 p-8 rounded-lg border border-raven-bronze/20 aspect-square flex items-center justify-center transition-all duration-300 hover:bg-raven-accent/40 cursor-help"><div class="w-full h-full flex items-center justify-center bg-white rounded-md p-4">
+<img alt="FCA Logo" class="max-h-full max-w-full object-contain" src="https://financialcrimeacademy.org/wp-content/uploads/2024/09/FCA-Logo-Color-Standard_by-Verdian.png"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 bg-raven-bronze/95 rounded-lg transition-all duration-300 p-6 text-center"><h4 class="text-raven-dark font-bold text-lg md:text-xl mb-2 brand-font uppercase">Diplomado en Finanzas</h4><p class="text-raven-dark font-bold text-sm mb-3 tracking-widest">2023</p><p class="text-xs text-raven-dark/90 leading-relaxed font-medium">Especialización en prevención de crímenes financieros y cumplimiento normativo.</p></div></div>
+</div>
+</div>
+</section>
+<!-- END: StudiesSection -->
+<!-- BEGIN: ProjectsSection -->
+<section class="py-24" id="proyectos">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-raven-gold mb-16 text-center tracking-widest">Proyectos Destacados</h2>
+<div class="relative group">
+<!-- Project Carousel Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
+<!-- Project 1 -->
+<div class="bg-raven-accent/40 rounded-xl overflow-hidden border border-raven-bronze/20 card-hover transition-all duration-300">
+<img alt="Proyecto Inventarios" class="w-full h-48 object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4FMyK0nm5pAUCuPHWW_-JEUAgX7C44u-FGh6j9_PDfgs5KQ_pw7PovYHXkI3Qg4MtliuX4lgJaeZhwylMQgQadMVq-Wf7093BB4l65zg4IX6FGzthNCd3jHEu6LPyc5lg8uHvO4hV7yKyOW3pGYMwlmHebdEC0G08WjIupFGtqgr5ho3irUWjuTEzRJ8897uk3GcRR77_-0tvNyWe7JgPHfthWttHgR_J_JFGJjXkAkzMfBKSILISqHkEB0evw0wxfe4R1hq46FZA"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-raven-gold mb-2">Optimización de Inventarios</h3>
+<p class="text-sm text-raven-parchment/70 mb-4">Dashboard en Power BI para reducir stock inactivo en un 20% mediante análisis predictivo.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">SQL</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">Power BI</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">Python</span>
+</div>
+<a class="text-raven-gold text-xs uppercase tracking-widest font-bold hover:underline" href="#">Ver Detalles →</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="bg-raven-accent/40 rounded-xl overflow-hidden border border-raven-bronze/20 card-hover transition-all duration-300">
+<img alt="Proyecto Fuga Clientes" class="w-full h-48 object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF5ksS_Q37yyfYkrAzFC3p3HvcC9BTFqSzBZKXmuAA2PVqzIHtYqAFaOm-FpfiWaHsOU0kLzUFtxXHAe_2K1Kl8Qg2hPxa8SnrNhnOPphFpDKLuNLjg1j2xW_6eUFK_ZziL_-5QsHZvXroyDtDJk44rDCaILjH4XKmx5uZJATJUXoiFiaaSJTaAnEB2cyNs5M5dK8SqNMwcJLbGat7yfuF1zzlEqizf6OQcCmBmqVBcI202GyJ67lffdCHS-e6bResk5a2a_MRgIAE"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-raven-gold mb-2">Predictor de Fuga de Clientes</h3>
+<p class="text-sm text-raven-parchment/70 mb-4">Modelo de Machine Learning para una empresa de telecomunicaciones para retención activa.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">Scikit-learn</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">Pandas</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">XGBoost</span>
+</div>
+<a class="text-raven-gold text-xs uppercase tracking-widest font-bold hover:underline" href="#">Ver Detalles →</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="bg-raven-accent/40 rounded-xl overflow-hidden border border-raven-bronze/20 card-hover transition-all duration-300">
+<img alt="Proyecto Automatizacion" class="w-full h-48 object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUIlLpzjSA1urrUDpaHvfGhC5gr6O4wVP9z50yBLiyc61C4gUn1Y0wSujKNXqvNkplsLe-qAwp6RajbReLWZBJZEHwErG7RZ8vjCehReG7m4Aul11Yeej2zp77g2XtUjjD1FIZP7JQlYPnQ48HyOJ2TJiDUKz6y-_xyiv_ACGgWcTz5mhHibM8XkGh6ABAJlUAulYqMSUakW_LXANvxucj5Y_7CInqQ9B4Nw2oPK3BrmzmWoAWRiyK52Ay1aaQ_ztBepk6877xZbc1"/>
+<div class="p-6">
+<h3 class="text-xl font-bold text-raven-gold mb-2">Automatización de Reportes</h3>
+<p class="text-sm text-raven-parchment/70 mb-4">Script de Python que procesa datos de múltiples fuentes y genera reportes diarios automatizados.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">Python</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">AWS</span>
+<span class="text-[10px] px-2 py-0.5 border border-raven-bronze/50 rounded uppercase">ETL</span>
+</div>
+<a class="text-raven-gold text-xs uppercase tracking-widest font-bold hover:underline" href="#">Ver Detalles →</a>
+</div>
+</div>
+</div>
+<!-- Carousel Navigation Arrows -->
+<div class="flex justify-center mt-12 gap-4">
+<button class="w-12 h-12 rounded-full border border-raven-bronze flex items-center justify-center hover:bg-raven-gold/20 transition-colors">
+<svg class="h-6 w-6 text-raven-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<button class="w-12 h-12 rounded-full border border-raven-bronze flex items-center justify-center hover:bg-raven-gold/20 transition-colors">
+<svg class="h-6 w-6 text-raven-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: ExperienceSection -->
+<section class="py-24 bg-raven-dark/50" id="experiencia">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-3xl font-bold text-raven-gold mb-16 text-center tracking-widest">Experiencia Profesional</h2>
+<div class="space-y-6">
+<!-- Experience 1 -->
+<div class="flex gap-6 p-6 bg-raven-accent/30 rounded-lg border-l-4 border-raven-gold relative overflow-hidden group">
+<div class="w-16 h-16 bg-raven-parchment rounded flex items-center justify-center flex-shrink-0">
+<span class="text-raven-dark font-black text-[10px]">CONEKTA</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-bold text-raven-gold mb-4 brand-font uppercase tracking-wide">Conekta</h3>
+<div class="space-y-4">
+<div class="border-l border-raven-bronze/30 pl-4 relative">
+<div class="absolute w-2 h-2 bg-raven-gold rounded-full -left-[4.5px] top-1.5"></div>
+<div class="flex flex-wrap justify-between items-center gap-2">
+<h4 class="text-md font-semibold text-raven-parchment italic">Senior Fraud Analyst</h4>
+<span class="text-[10px] bg-raven-bronze/30 px-2 py-1 rounded text-raven-gold uppercase">Jan 2023 - Present</span>
+</div>
+</div>
+<div class="border-l border-raven-bronze/30 pl-4 relative">
+<div class="absolute w-2 h-2 bg-raven-bronze/50 rounded-full -left-[4.5px] top-1.5"></div>
+<div class="flex flex-wrap justify-between items-center gap-2">
+<h4 class="text-md font-semibold text-raven-parchment/80">Junior Fraud Analyst</h4>
+<span class="text-[10px] bg-raven-bronze/30 px-2 py-1 rounded text-raven-gold uppercase">June 2021 - Dec 2022</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience 2 -->
+<div class="flex gap-6 p-6 bg-raven-accent/20 rounded-lg border-l-4 border-raven-accent relative overflow-hidden group">
+<div class="w-16 h-16 bg-raven-parchment rounded flex items-center justify-center flex-shrink-0 opacity-80">
+<span class="text-raven-dark font-black text-[10px]">PPRO</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-bold text-raven-gold/70 mb-4 brand-font uppercase tracking-wide">PPRO</h3>
+<div class="space-y-4">
+<div class="border-l border-raven-bronze/20 pl-4 relative">
+<div class="absolute w-2 h-2 bg-raven-accent rounded-full -left-[4.5px] top-1.5"></div>
+<div class="flex flex-wrap justify-between items-center gap-2">
+<h4 class="text-md font-semibold text-raven-parchment/80">Data Analyst</h4>
+<span class="text-[10px] bg-raven-bronze/30 px-2 py-1 rounded text-raven-gold uppercase">Anterior</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience 3 -->
+<div class="flex gap-6 p-6 bg-raven-accent/20 rounded-lg border-l-4 border-raven-accent relative overflow-hidden group">
+<div class="w-16 h-16 bg-raven-parchment rounded flex items-center justify-center flex-shrink-0 opacity-80">
+<span class="text-raven-dark font-black text-[10px]">SIGNIFYD</span>
+</div>
+<div class="flex-grow">
+<h3 class="text-xl font-bold text-raven-gold/70 mb-4 brand-font uppercase tracking-wide">Signifyd</h3>
+<div class="space-y-4">
+<div class="border-l border-raven-bronze/20 pl-4 relative">
+<div class="absolute w-2 h-2 bg-raven-accent rounded-full -left-[4.5px] top-1.5"></div>
+<div class="flex flex-wrap justify-between items-center gap-2">
+<h4 class="text-md font-semibold text-raven-parchment/80">Fraud Operations</h4>
+<span class="text-[10px] bg-raven-bronze/30 px-2 py-1 rounded text-raven-gold uppercase">Anterior</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ExperienceSection -->
+<!-- BEGIN: Footer -->
+<footer class="py-12 bg-raven-dark border-t border-raven-bronze/10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+<div class="flex gap-8 mb-8">
+<a class="text-raven-gold hover:text-raven-parchment transition transform hover:scale-110" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+</a>
+<a class="text-raven-gold hover:text-raven-parchment transition transform hover:scale-110" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="text-raven-gold hover:text-raven-parchment transition transform hover:scale-110" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+<p class="text-xs text-raven-parchment/50 font-medium tracking-widest uppercase">© 2023 Digital Portfolio - Ravenclaw Theme</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Typewriter Script -->
+<script data-purpose="typewriter-effect">
+    const element = document.getElementById('typewriter');
+    const texts = [
+      "Hola! Soy Ricardo",
+      "Hola! Soy Data Analyst"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+      const currentText = texts[textIndex];
+      
+      if (isDeleting) {
+        element.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        element.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 150;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause at end
+      } else if (isDeleting && charIndex === 11) { // Keeps "Hola! Soy "
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typeSpeed = 500;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => type());
+  </script>
+<!-- END: Typewriter Script -->
+</body></html>
